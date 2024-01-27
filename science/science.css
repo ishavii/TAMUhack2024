@@ -2,6 +2,7 @@
 .topnav {
     background-color: #5efff7;
     overflow: hidden;
+    text-align: center;
   }
   
   /* Style the links inside the navigation bar */
@@ -24,4 +25,27 @@
   .topnav a.active {
     background-color: #009dff;
     color: rgb(0, 0, 0);
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0deaa;
+  }
+  
+  
+  .image {
+    flex-basis: 40%
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    height: 400px;
   }
