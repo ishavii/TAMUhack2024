@@ -3,6 +3,10 @@
         <link rel="stylesheet" href="science.css">
         <title>Science-STEM</title>
     </head>
+
+    <script src="science.js">
+    </script>
+
     <body>
         <div class="topnav">
             <a href="../home/home.html">Home</a>
@@ -17,6 +21,7 @@
         </div>
         <div class = "intro">
             <div class = "text">
+                <br></br>
                 <p>Hi! We are Tara and Ryan. We are your guides on your amazing journey into the world of science. We are excited to become your new friends and show you all the wonderful things we have explored. Scroll down to look at some coll science stuff that will make your mind blow</p><p>------------------------------------------------------------------------------------------------------</p>
                 <p>Click on the buttons below to see to  explore some amazing simulations and gain a differnt view of everyday events and become inspired with science!</p>
                 <p></p>
@@ -26,5 +31,33 @@
                 <img src="introchar.png", width = "500px", height = "400px">
             </div>
         </div>
+        <div class = "Chem">
+            <div class="image2">
+                <img id = "imag", src="sodium.jpg", width = "350px", height = "400px">
+            </div>
+            <div class = "text2">
+                <h3><b><u>Chemistry</u></b></h3>
+                <p>Hey guys! Chemistry is all about studying elemnts, things that everything is made up of and ther properties. Click on the button below to see the colors differnt elements take on when they are burnt</p>
+                <button class="btn t", onclick="window.location.reload()">Click Me!</button>
+                <br></br>
+                <button id = "elem", class="btn e">Sodium</button>
+            </div>
+            <div class="image2">
+                <img id = "imag2", src="sodium.jpg", width = "350px", height = "400px">
+            </div>
+        </div>
     </body>
+
+    <script>
+        let randomNum = Math.floor(Math.random() * 8);
+        let e = elems[randomNum];
+  
+        imgElem = document.getElementById("imag");
+        img2Elem = document.getElementById("imag2");
+        nameElem = document.getElementById("elem");
+  
+        imgElem.src = e["img"];
+        img2Elem.src = e["img"];
+        nameElem.innerHTML = e["ele"];
+      </script>
 </html>

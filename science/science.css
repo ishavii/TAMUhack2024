@@ -40,27 +40,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff0ec;
+    background-color: #d4d4d4;
   }
   
   
   .image {
-    flex-basis: 50%
+    flex-basis: 50%;
+    border: 7px solid rgba(59, 0, 0, 0.849);
   }
   
   .text {
     font-size: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     height: 400px;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Candara";
     margin: 0;
   }
 
     .header {
         font-size: 20px;
         height: 50px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Handwritten';
         background-color: #fff6a9;
         text-align:center;
         margin: 0;
@@ -77,8 +79,8 @@
         padding: 20px 28px; /* Add some padding */
         cursor: pointer; /* Add a pointer cursor on mouse-over */
         border-radius: 12px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
+        font-family: 'Perpetua';
+        font-size: 22px;
       }
       
       .b {background-color: #04AA6D;} /* Green */
@@ -89,3 +91,34 @@
       
       .c {background-color: #ff9800;} /* Orange */
       .c:hover {background: #e68a00;}
+
+      .t {border-radius: 50%;
+        background-color: #ff008c;} /* Orange */
+      .t:hover {background: #fe53a8;}
+
+      .e {border-radius: 50%;
+        background-color: #ff008c;} /* Orange */
+      .e:hover {background: #ff008c;}
+
+      .chem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f6faca;
+      }
+      
+      
+      .image2 {
+        flex-basis: 30%;
+        border: 7px solid rgba(255, 166, 0, 0.849);
+      }
+      
+      .text2 {
+        font-size: 22px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 400px;
+        text-align: center;
+        font-family: 'Perpetua';
+        margin: 0;
+      }
