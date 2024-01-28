@@ -1,18 +1,23 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="science.css">
         <link rel="stylesheet" href="tech.css">
         <title>Science-STEM</title>
     </head>
     <body>
         <div class="topnav">
+            <a href="../home/home.html"><i class="fa fa-globe"></i> coolSTEM</a>
+            <div class="topnav-right">
             <a href="../home/home.html">Home</a>
-            <a href="../science/science.html">Science</a>
-            <a class="active" href="tech.html">Tech</a>
+            <a class="active" href="../science/science.html">Science</a>
+            <a href="tech.html">Tech</a>
+            </div>
         </div>
 
         <h4>This is a motivated happy stem image </h4>
 
-        <img src="stem.png"
+        <img src="robot_dance.gif"
         alt = "This is a stem logo"
          height="200">
 
@@ -25,26 +30,56 @@
           height = "200">
 
              <!-- Paste the Replit embed code here -->
-             <iframe height="400px" width="100%" src="https://replit.com/@HiyaSharma2/repltitle?embed=true"></iframe>
+            <!-- <iframe height="400px" width="100%" src="https://replit.com/@HiyaSharma2/repltitle?embed=true"></iframe>-->
 
             <!-- Other content of your HTML page -->
-   
 
-
-          <div class = "text">
-                <p>Hi! We are Tara and Ryan. We are your guides on your amazing journey into the world of science. We are excited to become your new friends and show you all the wonderful things we have explored. Scroll down to look at some coll science stuff that will make your mind blow</p>
-            </div>
-
-            <p>
            
-         <button class="btn dancing">Dancing</button>
-         <button class="btn racing">Racing</button>
-         <button class="btn cooking">Cooking</button>
-         <button class="btn medicine">Medicine</button>
-         <button class="btn flying">Flying</button>
+
+
+         <div class = "Robotics">
+            <div class="image3">
+                <img id = "bio", src="robotcutehi.gif", width = "450px", height ="300px">
+            </div>
+            <div class = "text2">
+                <h3><b><u>Robotics</u></b></h3>
+                <p>Hey guys! Robotics is one of the cooles fields that has been emerging and it is able to do so many of the tasks. Such as those listed. Check them out!</p>
+                <button id = "dancing", class="btn bio", onclick= dancing() >Dancing</button>
+                <button id = "racing", class="btn bio", onclick = racing()>Racing</button>
+                <br></br>
+                <button id = "cooking", class="btn bio", onclick= cooking() >Cooking</button>
+                <button id = "medicine", class="btn bio", onclick = medicine()>Medicine</button>
+                <button id = "flying", class="btn bio", onclick = Flying()>Flying</button>
+
+                
+                <br></br>
+            </div>
+        </div>
 
             </p>
 
 
+
+
     </body>
+<script>
+    function dancing() {
+        document.getElementById("bio").src = "robot_dance.gif";
+    }
+    function racing() {
+        document.getElementById("bio").src = "robot_running.gif";
+    }
+    function cooking() {
+        document.getElementById("bio").src = "robot_cooking.gif";
+    }
+    function medicine() {
+        document.getElementById("bio").src = "robot_surgery.gif";
+    }
+    function Flying() {
+        document.getElementById("bio").src = "robot_flying.gif";
+        
+    }
+</script>
+    
+    
 </html>
