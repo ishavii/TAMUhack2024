@@ -119,18 +119,48 @@ body{
   
   
   .introimg {
-    flex-basis: 50%;
-    margin: 25px;
-    border: 7px solid rgba(59, 0, 0, 0.849);
+    flex-basis: 105%;
+    margin: 50px;
+    border: 7px solid rgba(65, 129, 117, 0.849);
   }
   
   .introduction {
-    padding-top: 50px;
-    font-size: 20px;
+    padding-top: 150px;
+    font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
     height: 400px;
     text-align: center;
     font-family: "Calibri";
+    color: #0c263e;
     margin: 0;
+  }
+
+  .button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #80e7c1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #c8c4f5;
+  }
+
+  .pagebreak{
+    background-color: #c6b4f4;
+    font-size: 50px;
+    display:flex;
+  }
+  .text2{
+    color: #38387e;
+  }
+  .button:hover {background-color: #b9e9f2}
+  
+  .button:active {
+    background-color: #6beace;
+    box-shadow: 0 5px #dbabe4;
+    transform: translateY(4px);
   }
