@@ -1,31 +1,45 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #8ae2de;
+  background-color: #c3b5ff;
   overflow: hidden;
+  text-align: center;
+  font-family: 'Calibri';
+  font-size: 20px;
+  align-self: center;
+  
+}
+
+.topnav-right {
+  float: right;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #1d1d96;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #daff23;
-  color: rgb(0, 0, 0);
+  background-color: #daee9d;
+  color: rgb(255, 255, 255);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #009dff;
-  color: rgb(0, 0, 0);
+  background-color: #8b5dff;
+  color: rgb(255, 255, 255);
 }
+
+/*Styles the body*/
+body{
+  background-color: #faf9fc;
+}
+
 
 * {box-sizing:border-box}
 
@@ -33,7 +47,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -42,7 +56,6 @@
 .mySlides {
   display: none;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -96,14 +109,14 @@
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #a7a6e2;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #42445b;
 }
 
 /* Fading animation */
@@ -116,3 +129,18 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/*-----------------*/
+
+
+/*STEM Text block*/
+.header{
+    font-size: 30px;
+    height: 75px;
+    background-color: #a9c0ff;
+    text-align:center;
+    margin: 0;
+    padding-bottom: 20;
+    color: #38387e;
+}
+
