@@ -25,3 +25,9 @@
     background-color: #009dff;
     color: rgb(0, 0, 0);
   }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff6a9;
+  }
