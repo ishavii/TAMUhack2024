@@ -66,6 +66,21 @@
                 <br></br>
             </div>
         </div>
+
+        <div class = "Physics">
+            <div class = "text2">
+                <h3><b><u>Physics</u></b></h3>
+                <p>Hey guys! Physicis is the  study matter and the forces (pushes or pulls) that act on it. (Matter is what makes up all physical objects.) It also involves study of many different forms of energy. This demo will focus on electricity</p>
+                <button id = "explain", class="btn bio">Explanation</button>
+                <p id = "ex", font-family = "Calibri">When you click on the red button the circuit is closed or a loop so the electricity will continuously flow allowing the light bulb to light up! </p>
+                <br></br>
+            </div>
+            <div class="image4">
+                <img id = "imagcir", src="circuit.jpg", width = "450px", height ="300px">
+                <button class="btn", border-radius = "50%", onclick = circuit()></button>
+                <button class="bulb", border-radius = "50%", id = "light"></button>
+            </div>
+        </div>
     </body>
 
     <script>
@@ -91,6 +106,14 @@
         }
         function stream() {
             document.getElementById("imagbio").src = "blood_stream.gif";
+        }
+
+        function circuit() {
+            if (document.getElementById("light").style.background==='#ffff4c') {window.location.reload();}
+            else {
+                document.getElementById("light").style.background='#ffff4c';
+            }
+            
         }
       </script>
 </html>
