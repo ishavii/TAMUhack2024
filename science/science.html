@@ -41,13 +41,29 @@
             </div>
             <div class = "text2">
                 <h3><b><u>Chemistry</u></b></h3>
-                <p>Hey guys! Chemistry is all about studying elemnts, things that everything is made up of and ther properties. Click on the button below to see the colors differnt elements take on when they are burnt</p>
+                <p>Hey guys! Chemistry is all about studying elements, things that everything is made up of and ther properties. Click on the button below to see the colors differnt elements take on when they are burnt</p>
                 <button class="btn t", onclick="window.location.reload()">Click Me!</button>
                 <br></br>
                 <button id = "elem", class="btn e">Sodium</button>
             </div>
             <div class="image2">
                 <img id = "imag2", src="sodium.jpg", width = "350px", height = "400px">
+            </div>
+        </div>
+
+        <div class = "Biology">
+            <div class="image3">
+                <img id = "imagbio", src="cell.gif", width = "350px", height = "350px">
+            </div>
+            <div class = "text2">
+                <h3><b><u>Biology</u></b></h3>
+                <p>Hey guys! Biology is all about studying living beings, which also includes really small being called microorganisms. Click on the buttons below to see these microorganisms and process under a microscope</p>
+                <button id = "bac", class="btn bio", onclick= bacteria() >Bacteria</button>
+                <button id = "cell", class="btn bio", onclick = cell()>Cell</button>
+                <br></br>
+                <button id = "virus", class="btn bio", onclick= virus() >Virus</button>
+                <button id = "blood", class="btn bio", onclick = stream()>Blood Flow</button>
+                <br></br>
             </div>
         </div>
     </body>
@@ -63,5 +79,18 @@
         imgElem.src = e["img"];
         img2Elem.src = e["img"];
         nameElem.innerHTML = e["ele"];
+
+        function bacteria() {
+            document.getElementById("imagbio").src = "bacteria.gif";
+        }
+        function cell() {
+            document.getElementById("imagbio").src = "cell.gif";
+        }
+        function virus() {
+            document.getElementById("imagbio").src = "virus.gif";
+        }
+        function stream() {
+            document.getElementById("imagbio").src = "blood_stream.gif";
+        }
       </script>
 </html>
