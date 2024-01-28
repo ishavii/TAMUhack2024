@@ -71,7 +71,7 @@
             <div class = "text2">
                 <h3><b><u>Physics</u></b></h3>
                 <p>Hey guys! Physics is the  study matter and the forces (pushes or pulls) that act on it. (Matter is what makes up all physical objects.) It also involves study of many different forms of energy. This demo will focus on electricity</p>
-                <button id = "explain", class="btn bio">Explanation</button>
+                <button id = "explain", class="btn bio", onclick = show()>Explanation</button>
                 <p id = "ex", font-family = "Calibri", font-size = 10>When you click on the red button the circuit is closed or a loop so the electricity will continuously flow allowing the light bulb to light up! </p>
                 <br></br>
             </div>
@@ -125,6 +125,9 @@
                 count = count +1;
             }
             
+        }
+        function show() {
+            document.getElementById("ex").innerHTML = "When you click on the red button the circuit is closed or a loop so the electricity will continuously flow allowing the light bulb to light up! "
         }
       </script>
 </html>
