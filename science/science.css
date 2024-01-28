@@ -48,6 +48,11 @@
     background-color: #ddf2c1;
   }
   
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
   
   .image {
     flex-basis: 50%;
@@ -107,7 +112,7 @@
       .e:hover {background: #ff008c;}
 
       .bio {background-color: #562996;} /* Orange */
-      .c:hover {background: #371b5f;}
+      .bio:hover {background: #371b5f;}
 
       .chem {
         display: flex;

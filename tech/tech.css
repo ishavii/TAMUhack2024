@@ -1,29 +1,38 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #5efff7;
+    background-color: #c3b5ff;
     overflow: hidden;
+    text-align: center;
+    font-family: 'Calibri';
+    font-size: 20px;
+    align-self: center;
+    
+  }
+
+  .topnav-right {
+    float: right;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #04002b;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #daff23;
-    color: black;
+    background-color: #006490;
+    color: rgb(255, 255, 255);
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #009dff;
-    color: rgb(0, 0, 0);
+    background-color: #8b5dff;
+    color: rgb(255, 255, 255);
   }
 
   html, body {
@@ -31,3 +40,16 @@
     padding: 0;
     background-color: #fff6a9;
   }
+
+  .btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 20px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    border-radius: 12px;
+    font-family: 'Perpetua';
+    font-size: 22px;
+  }
+
+  .bio {background-color: #562996;} /* Orange */
+  .bio:hover {background: #371b5f;}
