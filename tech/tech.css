@@ -2,6 +2,8 @@
 .topnav {
     background-color: #5efff7;
     overflow: hidden;
+    text-align: center;
+
   }
   
   /* Style the links inside the navigation bar */
@@ -25,3 +27,48 @@
     background-color: #009dff;
     color: rgb(0, 0, 0);
   }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0deaa;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image {
+    flex-basis: 40%
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    height: 400px;
+  }
+
+  .btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+  }
+  
+  .dancing {background-color: #04AA6D;} /* Green */
+  .dancing:hover {background-color: #46a049;}
+  
+  .racing {background-color: #2196F3;} /* Blue */
+  .racing:hover {background: #0b7dda;}
+  
+  .cooking {background-color: #ff9800;} /* Orange */
+  .cooking:hover {background: #e68a00;}
+  
+  .medicine {background-color: #f44336;} /* Red */
+  .medicine:hover {background: #da190b;}
+  
+  .flying {background-color: #e7e7e7; color: black;} /* Gray */
+  .flying:hover {background: #ddd;}
+  
