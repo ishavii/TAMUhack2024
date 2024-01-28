@@ -70,12 +70,9 @@
         <div class = "Physics">
             <div class = "text2">
                 <h3><b><u>Physics</u></b></h3>
-                <p>Hey guys! Biology is all about studying living beings, which also includes really small being called microorganisms. Click on the buttons below to see these microorganisms and process under a microscope</p>
-                <button id = "bac", class="btn bio", onclick= bacteria() >Bacteria</button>
-                <button id = "cell", class="btn bio", onclick = cell()>Cell</button>
-                <br></br>
-                <button id = "virus", class="btn bio", onclick= virus() >Virus</button>
-                <button id = "blood", class="btn bio", onclick = stream()>Blood Flow</button>
+                <p>Hey guys! Physicis is the  study matter and the forces (pushes or pulls) that act on it. (Matter is what makes up all physical objects.) It also involves study of many different forms of energy. This demo will focus on electricity</p>
+                <button id = "explain", class="btn bio">Explanation</button>
+                <p id = "ex", font-family = "Calibri">When you click on the red button the circuit is closed or a loop so the electricity will continuously flow allowing the light bulb to light up! </p>
                 <br></br>
             </div>
             <div class="image4">
@@ -111,7 +108,7 @@
             document.getElementById("imagbio").src = "blood_stream.gif";
         }
         function circuit() {
-            if (document.getElementById("light").style.background=='#ffff4c') {document.getElementById("light").style.background='#ffffff';}
+            if (document.getElementById("light").style.background=='#ffff4c') {window.location.reload();}
             else {
                 document.getElementById("light").style.background='#ffff4c';
             }
