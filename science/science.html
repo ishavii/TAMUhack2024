@@ -72,12 +72,12 @@
                 <h3><b><u>Physics</u></b></h3>
                 <p>Hey guys! Physics is the  study matter and the forces (pushes or pulls) that act on it. (Matter is what makes up all physical objects.) It also involves study of many different forms of energy. This demo will focus on electricity</p>
                 <button id = "explain", class="btn bio">Explanation</button>
-                <p id = "ex", font-family = "Calibri">When you click on the red button the circuit is closed or a loop so the electricity will continuously flow allowing the light bulb to light up! </p>
+                <p id = "ex", font-family = "Calibri", font-size = 10>When you click on the red button the circuit is closed or a loop so the electricity will continuously flow allowing the light bulb to light up! </p>
                 <br></br>
             </div>
             <div class="image4">
                 <img id = "imagcir", src="circuit.jpg", width = "450px", height ="300px">
-                <button class="btn", border-radius = "50%", onclick = circuit()></button>
+                <button class="btn", border-radius = "50%", id = "cir", onclick = circuit()></button>
                 <button class="bulb", border-radius = "50%", id = "light"></button>
             </div>
         </div>
@@ -108,10 +108,21 @@
             document.getElementById("imagbio").src = "blood_stream.gif";
         }
 
+        var count = 1;
         function circuit() {
-            if (document.getElementById("light").style.background==='#ffff4c') {window.location.reload();}
+            if (count%2 === 0) {
+                console.log("Test1");
+                document.getElementById("cir").style.background='#000000';
+                document.getElementById("light").style.background='#ffffff';
+                document.getElementById("ex").innerHTML = "Alright, imagine the light bulb is like a little sun that needs power to shine. When you flip the switch on, it's like giving the sun energy, and it glows bright! But when you turn the switch off, it's like telling the sun to take a nap, so it stops shining until you wake it up again by flipping the switch back on. So, when the switch is off, the light bulb doesn't have any energy to glow, just like how the sun doesn't shine at night!";
+                count = count +1;
+            }
             else {
+                console.log("Test2");
+                document.getElementById("cir").style.background='#740000';
                 document.getElementById("light").style.background='#ffff4c';
+                document.getElementById("ex").innerHTML = "So, inside the light bulb, there's a tiny wire called a filament. When we flip the switch on, it lets electricity flow through the wire. This electricity makes the filament get really hot, so hot that it starts to glow and gives off light, just like how a stove gets hot when we turn it on to cook our food! So, when the switch is on, the electricity makes the filament glow and gives us light.";
+                count = count +1;
             }
             
         }
