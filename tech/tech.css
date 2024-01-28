@@ -40,3 +40,16 @@
     padding: 0;
     background-color: #fff6a9;
   }
+
+  .btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 20px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    border-radius: 12px;
+    font-family: 'Perpetua';
+    font-size: 22px;
+  }
+
+  .bio {background-color: #562996;} /* Orange */
+  .bio:hover {background: #371b5f;}
