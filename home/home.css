@@ -1,29 +1,136 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #5efff7;
+  background-color: #c3b5ff;
   overflow: hidden;
+  text-align: center;
+  font-family: 'Calibri';
+  font-size: 20px;
+  align-self: center;
+  
+}
+
+.topnav-right {
+  float: right;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #04002b;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #daff23;
-  color: black;
+  background-color: #daee9d;
+  color: rgb(255, 255, 255);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #009dff;
-  color: rgb(0, 0, 0);
+  background-color: #8b5dff;
+  color: rgb(255, 255, 255);
 }
 
+/*Styles the body*/
+body{
+  background-color: #faf9fc;
+}
+
+
 * {box-sizing:border-box}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*-----------------*/
+
+
+/*STEM Text block*/
+.header{
+    font-size: 30px;
+    height: 75px;
+    background-color: #a9c0ff;
+    text-align:center;
+    margin: 0;
+    padding-bottom: 20;
+    color: #38387e;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddf2c1;
+  }
+  
+  
+  .introimg {
+    flex-basis: 50%;
+    margin: 25px;
+    border: 7px solid rgba(59, 0, 0, 0.849);
+  }
+  
+  .introduction {
+    padding-top: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 400px;
+    text-align: center;
+    font-family: "Calibri";
+    margin: 0;
+  }
