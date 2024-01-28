@@ -1,46 +1,83 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="science.css">
         <link rel="stylesheet" href="tech.css">
         <title>Science-STEM</title>
     </head>
     <body>
         <div class="topnav">
+            <a href="../home/home.html"><i class="fa fa-globe"></i> coolSTEM</a>
+            <div class="topnav-right">
             <a href="../home/home.html">Home</a>
-            <a href="science.html">Science</a>
-            <a class="active" href="../tech/tech.html">Tech</a>
+            <a class="active" href="../science/science.html">Science</a>
+            <a href="tech.html">Tech</a>
+            </div>
         </div>
 
-        <h4>This is a motivated happy stem image </h4>
-
-    
-
-         <img src="robotcutehi.gif"
-         alt = "waving a hi"
-          height="200">
-
-          <img src="robothi.gif"
-          alt = "hi"
-           height="200">
-           <img src="robot_dance.png"
-           alt = "robot dance"
-            height="200">
-      
-
-
-         <img src="nuclear_explosion.gif"
-          alt="explode boom"
-          height = "200">
-
-          <img src="jimmy.gif"
-          alt="chemistry"
-          height = "200">
+        <h4>Lets explore the different technologies together </h4>
 
              <!-- Paste the Replit embed code here -->
-             <iframe height="400px" width="100%" src="https://replit.com/@HiyaSharma2/repltitle?embed=true"></iframe>
+            <!-- <iframe height="400px" width="100%" src="https://replit.com/@HiyaSharma2/repltitle?embed=true"></iframe>-->
 
             <!-- Other content of your HTML page -->
-   
+
+           
+
+
+         <div class = "Robotics">
+            <div class="image3">
+                <img id = "bio", src="robotcutehi.gif", width = "450px", height ="300px">
+            </div>
+            <div class = "text2">
+                <h3><b><u>Robotics</u></b></h3>
+                <p>Hey guys! Robotics is one of the cooles fields that has been emerging and it is able to do so many of the tasks. Such as those listed. Check them out!</p>
+                <button id = "dancing", class="btn bio", onclick= dancing() >Dancing</button>
+                <button id = "racing", class="btn bio", onclick = racing()>Racing</button>
+                <button id = "cooking", class="btn bio", onclick= cooking() >Cooking</button>
+                <button id = "medicine", class="btn bio", onclick = medicine()>Medicine</button>
+                <button id = "flying", class="btn bio", onclick = Flying()>Flying</button>
+
+                
+                <br></br>
+            </div>
+        </div>
+<h5, font-size: 16px, margin = 25px>Let's start with technology. It's like magic tools that help us do things better and faster. For example, computers, phones, and tablets are all technology. They help us communicate, play games, and learn new things.
+
+    Now, engineering is like building and creating stuff. Think of it as solving puzzles to make things work better. Engineers design things like buildings, bridges, and even roller coasters! They use math and science to figure out the best ways to make them strong and safe.
+    
+    Next up is science. Science is all about asking questions and finding answers. Scientists study everything from tiny bugs to huge planets. They use experiments and observations to learn how the world works.
+    
+    Lastly, there's math. Math is like a superpower that helps us solve problems and understand patterns. It's used in everything from counting money to building rockets!
+    
+    So, if you're interested in STEM, there are lots of ways to get involved. You could become a computer programmer and write code for apps and games. Or you might become an engineer and design cool gadgets. If you love animals, you could be a scientist and study how they behave. And if you're a math whiz, you could become a mathematician and solve complex problems.
+    
+    No matter what you're passionate about, there's a place for you in the exciting world of STEM!
+    </h5>
+            </p>
+
+
 
 
     </body>
+<script>
+    function dancing() {
+        document.getElementById("bio").src = "robot_dance.gif";
+    }
+    function racing() {
+        document.getElementById("bio").src = "robot_running.gif";
+    }
+    function cooking() {
+        document.getElementById("bio").src = "robot_cooking.gif";
+    }
+    function medicine() {
+        document.getElementById("bio").src = "robot_surgery.gif";
+    }
+    function Flying() {
+        document.getElementById("bio").src = "robot_flying.gif";
+        
+    }
+</script>
+    
+    
 </html>
